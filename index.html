@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZOTOV.PRO | Системная автоматизация</title>
+    <meta name="description" content="Внедрение цифровых сотрудников и автоматизация бизнеса. Опыт Big4.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        brand: {
+                            dark: '#0f172a', // Slate 900
+                            card: '#1e293b', // Slate 800
+                            accent: '#3b82f6', // Blue 500
+                            hover: '#2563eb', // Blue 600
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Glassmorphism utility */
+        .glass {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-brand-dark text-slate-300 font-sans antialiased selection:bg-brand-accent selection:text-white">
+
+    <header class="fixed w-full top-0 z-50 glass">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold text-white tracking-widest uppercase hover:text-brand-accent transition">Zotov<span class="text-brand-accent">.Pro</span></a>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#about" class="hover:text-white transition">Компетенции</a>
+                <a href="#cases" class="hover:text-white transition">Кейсы</a>
+                <a href="#contact" class="hover:text-white transition">Контакты</a>
+            </nav>
+            <a href="https://t.me/yourusername" target="_blank" class="md:hidden text-brand-accent font-semibold">Telegram</a>
+        </div>
+    </header>
+
+    <section class="min-h-screen flex items-center justify-center pt-16 relative overflow-hidden">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-brand-accent/20 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+            <div class="inline-block px-3 py-1 mb-6 text-xs font-semibold tracking-wider text-brand-accent uppercase border border-brand-accent/30 rounded-full bg-brand-accent/10">
+                System Analysis & Automation
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                Системная автоматизация <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-purple-400">бизнеса через AI</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto font-light">
+                Внедряю цифровых сотрудников, которые работают 24/7. <br class="hidden md:block">
+                Глубокая аналитика и архитектура решений. Опыт Big4.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="https://t.me/AleksZotov" target="_blank" class="px-8 py-4 bg-brand-accent hover:bg-brand-hover text-white font-semibold rounded-lg transition shadow-lg shadow-brand-accent/25">
+                    Написать в Telegram
+                </a>
+                <a href="#cases" class="px-8 py-4 bg-transparent border border-slate-600 hover:border-white text-white font-semibold rounded-lg transition">
+                    Смотреть кейсы
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-brand-dark">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-white mb-12 border-l-4 border-brand-accent pl-4">Бэкграунд</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-2xl bg-brand-card hover:bg-slate-700/50 transition border border-slate-700 hover:border-brand-accent/50 group">
+                    <div class="w-12 h-12 bg-slate-800 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-accent transition">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-2">Big4 Experience</h3>
+                    <p class="text-slate-400 leading-relaxed">Строгие стандарты аудита процессов и выявления "узких горлышек". Работа с Enterprise архитектурой.</p>
+                </div>
+                <div class="p-8 rounded-2xl bg-brand-card hover:bg-slate-700/50 transition border border-slate-700 hover:border-brand-accent/50 group">
+                    <div class="w-12 h-12 bg-slate-800 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-accent transition">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-2">Salesforce & CRM</h3>
+                    <p class="text-slate-400 leading-relaxed">Внедрение и кастомизация CRM систем. Построение воронок продаж и автоматизация Customer Journey.</p>
+                </div>
+                <div class="p-8 rounded-2xl bg-brand-card hover:bg-slate-700/50 transition border border-slate-700 hover:border-brand-accent/50 group">
+                    <div class="w-12 h-12 bg-slate-800 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-accent transition">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-2">Low-Code (n8n)</h3>
+                    <p class="text-slate-400 leading-relaxed">Быстрая разработка интеграций любой сложности без раздувания бюджета на программистов.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cases" class="py-24 bg-brand-dark/50 relative">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-white mb-12 border-l-4 border-brand-accent pl-4">Реализованные кейсы</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <article class="bg-brand-card rounded-xl overflow-hidden shadow-lg border border-slate-700 hover:-translate-y-1 transition duration-300">
+                    <div class="h-48 bg-gradient-to-br from-slate-700 to-slate-800 flex items-center justify-center">
+                        <span class="text-4xl">🤖</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-xs text-brand-accent font-bold uppercase mb-2">Sales</div>
+                        <h3 class="text-xl font-bold text-white mb-3">AI Sales Assistant</h3>
+                        <p class="text-slate-400 text-sm mb-4">Бот, который квалифицирует лидов в Telegram, заносит их в CRM и назначает встречи в Google Calendar.</p>
+                    </div>
+                </article>
+                
+                <article class="bg-brand-card rounded-xl overflow-hidden shadow-lg border border-slate-700 hover:-translate-y-1 transition duration-300">
+                    <div class="h-48 bg-gradient-to-br from-slate-700 to-slate-800 flex items-center justify-center">
+                        <span class="text-4xl">📄</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-xs text-brand-accent font-bold uppercase mb-2">Operations</div>
+                        <h3 class="text-xl font-bold text-white mb-3">Генератор документов</h3>
+                        <p class="text-slate-400 text-sm mb-4">Автоматическое создание КП и Договоров на основе данных из формы на сайте с отправкой на подпись.</p>
+                    </div>
+                </article>
+
+                <article class="bg-brand-card rounded-xl overflow-hidden shadow-lg border border-slate-700 hover:-translate-y-1 transition duration-300">
+                    <div class="h-48 bg-gradient-to-br from-slate-700 to-slate-800 flex items-center justify-center">
+                        <span class="text-4xl">🧠</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-xs text-brand-accent font-bold uppercase mb-2">RAG / LLM</div>
+                        <h3 class="text-xl font-bold text-white mb-3">Корпоративная база знаний</h3>
+                        <p class="text-slate-400 text-sm mb-4">AI-поиск по регламентам компании. Сотрудник задает вопрос — бот отвечает ссылкой на документ.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="py-12 bg-black border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div>
+                <span class="text-2xl font-bold text-white tracking-widest uppercase">ZOTOV<span class="text-brand-accent">.PRO</span></span>
+                <p class="text-slate-500 text-sm mt-2">Автоматизируй рутину. Думай о стратегии.</p>
+            </div>
+            <div class="text-center md:text-right">
+                <a href="mailto:alex@zotov.pro" class="text-white hover:text-brand-accent text-lg font-medium transition block">alex@zotov.pro</a>
+                <p class="text-slate-600 text-xs mt-2">© 2026 IP Zotov. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
