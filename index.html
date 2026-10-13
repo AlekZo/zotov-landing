@@ -1,264 +1,197 @@
-<!DOCTYPE html>
-<html lang="ru" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZOTOV.PRO | Системный анализ и AI</title>
-    <meta name="description" content="Автоматизация бизнеса, разработка сайтов и внедрение AI-сотрудников.">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: { sans: ['Inter', 'sans-serif'] },
-                    colors: {
-                        primary: '#2563EB', // Royal Blue
-                        secondary: '#475569', // Slate 600
-                        dark: '#0F172A',    // Slate 900
-                        surface: '#F8FAFC', // Slate 50
-                    },
-                    boxShadow: {
-                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
-                        'glow': '0 0 40px -10px rgba(37, 99, 235, 0.2)',
-                    }
-                }
-            }
-        }
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#edf3f2" />
+    <meta name="description" content="Zotov Studio разрабатывает сайты, каталоги и веб-приложения под ключ: CRM, интеграции, ИИ, размещение на сервере клиента или в облаке и поддержка после запуска." />
+    <title>Сайты и веб-приложения под ключ для бизнеса — Zotov Studio</title>
+    <link rel="canonical" href="https://zotov.pro/" />
+    <link rel="alternate" hreflang="ru" href="https://zotov.pro/" />
+    <link rel="alternate" hreflang="en" href="https://zotov.pro/en/" />
+    <link rel="alternate" hreflang="x-default" href="https://zotov.pro/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Zotov Studio" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:url" content="https://zotov.pro/" />
+    <meta property="og:title" content="Сайты и веб-приложения под ключ — Zotov Studio" />
+    <meta property="og:description" content="Разработка для бизнес-процессов: от сайта и клиентского кабинета до интеграций, ИИ, размещения и дальнейшей поддержки." />
+    <meta name="twitter:card" content="summary" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://zotov.pro/#studio",
+            "name": "Zotov Studio",
+            "legalName": "ИП Зотов Александр Алексеевич",
+            "url": "https://zotov.pro/",
+            "email": "aleks@zotov.pro",
+            "sameAs": ["https://t.me/AleksZotov"],
+            "description": "Разработка сайтов, веб-приложений и цифровых систем для бизнес-процессов под ключ. Интеграции, ИИ, размещение и поддержка."
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://zotov.pro/#website",
+            "url": "https://zotov.pro/",
+            "name": "Zotov Studio",
+            "inLanguage": ["ru", "en"],
+            "publisher": {"@id": "https://zotov.pro/#studio"}
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://zotov.pro/#webpage",
+            "url": "https://zotov.pro/",
+            "name": "Сайты и веб-приложения под ключ для бизнеса",
+            "inLanguage": "ru",
+            "isPartOf": {"@id": "https://zotov.pro/#website"},
+            "about": {"@id": "https://zotov.pro/#studio"}
+          },
+          {
+            "@type": "Service",
+            "@id": "https://zotov.pro/#service",
+            "name": "Разработка сайтов и веб-приложений под ключ",
+            "serviceType": "Разработка сайтов, веб-приложений, интеграций и автоматизации бизнес-процессов",
+            "provider": {"@id": "https://zotov.pro/#studio"},
+            "url": "https://zotov.pro/#services",
+            "description": "Анализ задачи, проектирование, разработка, интеграции, размещение на инфраструктуре клиента, VPS или в облаке, поддержка и развитие."
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://zotov.pro/#faq",
+            "mainEntity": [
+              {"@type": "Question", "name": "Что вы разрабатываете?", "acceptedAnswer": {"@type": "Answer", "text": "Сайты и каталоги, веб-приложения, личные кабинеты, внутренние системы и интеграции, которые помогают вести реальные рабочие процессы."}},
+              {"@type": "Question", "name": "Можно ли связать решение с CRM, Telegram и ИИ?", "acceptedAnswer": {"@type": "Answer", "text": "Да. Состав интеграций и задач для ИИ определяем после разбора процесса и проверки технических ограничений."}},
+              {"@type": "Question", "name": "Где будет размещён сайт или приложение?", "acceptedAnswer": {"@type": "Answer", "text": "Возможны серверы клиента, отдельный VPS или облачная инфраструктура. Вариант выбираем с учётом требований к данным, доступу и обслуживанию."}},
+              {"@type": "Question", "name": "Что происходит после запуска?", "acceptedAnswer": {"@type": "Answer", "text": "Помогаю с эксплуатацией, исправлениями и развитием решения. Объём и условия сопровождения согласуем отдельно."}},
+              {"@type": "Question", "name": "Как узнать стоимость проекта?", "acceptedAnswer": {"@type": "Answer", "text": "На странице указаны ориентиры по масштабу. Точную смету готовлю после обсуждения задачи, сценариев и интеграций."}}
+            ]
+          }
+        ]
+      }
     </script>
-    <style>
-        /* Скрываем скроллбар для эстетики, но оставляем прокрутку */
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: transparent; }
-        ::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: #94A3B8; }
-    </style>
-</head>
-<body class="bg-white text-slate-600 font-sans antialiased selection:bg-primary selection:text-white">
-
-    <header class="fixed w-full top-0 z-50 bg-white/80 backdrop-blur-lg border-b border-slate-100/50">
-        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
-            <a href="#" class="text-xl font-bold text-dark tracking-tight flex items-center gap-2">
-                <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white font-bold text-sm">Z</div>
-                <span>Zotov.Pro</span>
-            </a>
-            
-            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-secondary">
-                <a href="#services" class="hover:text-primary transition-colors">Компетенции</a>
-                <a href="#cases" class="hover:text-primary transition-colors">Решения</a>
-                <a href="https://t.me/AleksZotov" target="_blank" class="px-5 py-2.5 text-white bg-dark hover:bg-primary rounded-full transition-all duration-300 shadow-lg hover:shadow-primary/30 flex items-center gap-2">
-                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.054 5.56-5.022c.242-.213-.054-.333-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z"/></svg>
-                    Связаться
-                </a>
-            </nav>
-        </div>
+  </head>
+  <body data-locale="ru">
+    <a class="skip-link" href="#main">К основному содержанию</a>
+    <header class="site-header" data-header>
+      <div class="shell header-inner">
+        <a class="wordmark" href="#top" aria-label="Zotov Studio — к началу страницы"><span class="wordmark-mark" aria-hidden="true"></span><span>Zotov Studio</span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Открыть меню" data-menu-toggle><span></span><span></span></button>
+        <nav id="site-nav" class="site-nav" aria-label="Основная навигация" data-menu>
+          <a href="#services">Что делаю</a>
+          <a href="#scenarios">Задачи</a>
+          <a href="#examples">Примеры</a>
+          <a href="#process">Как работаю</a>
+          <a class="locale-link" href="./en/" lang="en" hreflang="en" data-locale-link>English</a>
+          <a class="button button-small button-dark" href="#contact">Обсудить проект</a>
+        </nav>
+      </div>
     </header>
 
-    <main>
-        <section class="pt-32 pb-20 md:pt-48 md:pb-32 px-6 relative overflow-hidden">
-            <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-50/50 rounded-full blur-[100px] -z-10 translate-x-1/3 -translate-y-1/4"></div>
-            <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-slate-50 rounded-full blur-[80px] -z-10 -translate-x-1/3 translate-y-1/4"></div>
-
-            <div class="max-w-4xl mx-auto text-center relative">
-                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-50 border border-slate-100 text-secondary text-xs font-semibold uppercase tracking-wider mb-8 shadow-sm">
-                    <span class="relative flex h-2 w-2">
-                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                      <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
-                    </span>
-                    Доступен для новых проектов
-                </div>
-
-                <h1 class="text-5xl md:text-7xl font-bold text-dark mb-8 leading-[1.1] tracking-tight">
-                    Превращаю хаос <br>
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">в системный бизнес</span>
-                </h1>
-
-                <p class="text-lg md:text-xl text-slate-500 mb-12 max-w-2xl mx-auto leading-relaxed font-light">
-                    Разрабатываю веб-сервисы, настраиваю CRM и внедряю AI-сотрудников, которые работают без выходных и зарплаты.
-                </p>
-
-                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                    <a href="https://t.me/AleksZotov" target="_blank" class="w-full sm:w-auto px-8 py-4 bg-primary text-white font-medium rounded-xl shadow-glow hover:-translate-y-0.5 transition-all duration-300">
-                        Обсудить задачу
-                    </a>
-                    <a href="#cases" class="w-full sm:w-auto px-8 py-4 bg-white text-dark border border-slate-200 font-medium rounded-xl hover:bg-slate-50 hover:border-slate-300 transition-all">
-                        Смотреть кейсы
-                    </a>
-                </div>
-                
-                <div class="mt-16 pt-8 border-t border-slate-100 grid grid-cols-2 md:grid-cols-4 gap-8 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
-                    <div>
-                        <p class="text-2xl font-bold text-dark">5+</p>
-                        <p class="text-xs text-slate-400 uppercase tracking-wide">Лет опыта</p>
-                    </div>
-                    <div>
-                        <p class="text-2xl font-bold text-dark">Big4</p>
-                        <p class="text-xs text-slate-400 uppercase tracking-wide">Бэкграунд</p>
-                    </div>
-                    <div>
-                        <p class="text-2xl font-bold text-dark">100%</p>
-                        <p class="text-xs text-slate-400 uppercase tracking-wide">Соблюдение сроков</p>
-                    </div>
-                    <div>
-                        <p class="text-2xl font-bold text-dark">SaaS</p>
-                        <p class="text-xs text-slate-400 uppercase tracking-wide">Архитектура</p>
-                    </div>
-                </div>
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="shell hero-grid">
+          <div class="hero-copy">
+            <p class="hero-intro">От задачи до запуска и поддержки</p>
+            <h1 id="hero-title">Сайты и веб-приложения под ключ для вашего бизнеса.</h1>
+            <p class="hero-lede">Разбираю задачу, проектирую и разрабатываю решение: от сайта и каталога до личного кабинета или внутренней системы. Связываю его с CRM, мессенджерами и ИИ, запускаю и развиваю дальше.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#contact">Расскажите о задаче</a>
+              <a class="text-action" href="#services">Посмотреть, что я делаю</a>
             </div>
-        </section>
-
-        <section id="services" class="py-24 bg-surface border-y border-slate-100">
-            <div class="max-w-6xl mx-auto px-6">
-                <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-                    <div class="max-w-xl">
-                        <h2 class="text-3xl font-bold text-dark mb-4">Комплексный подход</h2>
-                        <p class="text-slate-500">Я не просто «пишу код». Я анализирую бизнес-процессы, нахожу узкие места и закрываю их технологиями.</p>
-                    </div>
-                    <a href="#cases" class="text-primary font-medium hover:text-blue-700 flex items-center gap-1 group">
-                        Все услуги <span class="group-hover:translate-x-1 transition-transform">→</span>
-                    </a>
-                </div>
-
-                <div class="grid md:grid-cols-3 gap-8">
-                    <div class="bg-white p-10 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl hover:shadow-slate-200/50 hover:-translate-y-1 transition-all duration-300 group">
-                        <div class="w-14 h-14 bg-blue-50 text-primary rounded-xl flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
-                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-dark mb-3">Системный Анализ</h3>
-                        <p class="text-slate-500 leading-relaxed text-sm">
-                            Провожу аудит, составляю CJM и пишу подробное ТЗ. Вы получаете четкую архитектуру проекта, которая экономит бюджет на разработке.
-                        </p>
-                    </div>
-
-                    <div class="bg-white p-10 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl hover:shadow-slate-200/50 hover:-translate-y-1 transition-all duration-300 group">
-                        <div class="w-14 h-14 bg-blue-50 text-primary rounded-xl flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
-                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-dark mb-3">Разработка Web & App</h3>
-                        <p class="text-slate-500 leading-relaxed text-sm">
-                            Создаю быстрые, адаптивные интерфейсы и сложные веб-приложения. Личные кабинеты, корпоративные порталы, SaaS-решения.
-                        </p>
-                    </div>
-
-                    <div class="bg-white p-10 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl hover:shadow-slate-200/50 hover:-translate-y-1 transition-all duration-300 group">
-                        <div class="w-14 h-14 bg-blue-50 text-primary rounded-xl flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
-                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-dark mb-3">AI Автоматизация</h3>
-                        <p class="text-slate-500 leading-relaxed text-sm">
-                            Внедряю n8n и GPT. Связываю CRM с мессенджерами. Ваш бизнес начинает работать 24/7 без человеческого фактора.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="cases" class="py-24 px-6 bg-white">
-            <div class="max-w-6xl mx-auto">
-                <div class="text-center mb-16">
-                    <span class="text-primary font-semibold text-sm uppercase tracking-wider">Сценарии использования</span>
-                    <h2 class="text-3xl md:text-4xl font-bold text-dark mt-3">Что я могу автоматизировать?</h2>
-                </div>
-                
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    
-                    <article class="p-8 rounded-2xl border border-slate-100 bg-surface hover:bg-white hover:shadow-lg hover:border-slate-200 transition-all duration-300">
-                        <div class="flex items-center gap-4 mb-4">
-                            <div class="p-2 bg-green-100 text-green-700 rounded-lg">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            </div>
-                            <h3 class="font-bold text-dark">Авто-продажи</h3>
-                        </div>
-                        <p class="text-sm text-slate-500 leading-relaxed">Квалификация лидов в Telegram, ответы на частые вопросы и запись в Google Календарь без менеджера.</p>
-                    </article>
-
-                    <article class="p-8 rounded-2xl border border-slate-100 bg-surface hover:bg-white hover:shadow-lg hover:border-slate-200 transition-all duration-300">
-                        <div class="flex items-center gap-4 mb-4">
-                            <div class="p-2 bg-indigo-100 text-indigo-700 rounded-lg">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
-                            </div>
-                            <h3 class="font-bold text-dark">Документооборот</h3>
-                        </div>
-                        <p class="text-sm text-slate-500 leading-relaxed">Генерация КП, Договоров и Актов в PDF за 5 секунд на основе данных из формы или CRM.</p>
-                    </article>
-
-                    <article class="p-8 rounded-2xl border border-slate-100 bg-surface hover:bg-white hover:shadow-lg hover:border-slate-200 transition-all duration-300">
-                        <div class="flex items-center gap-4 mb-4">
-                            <div class="p-2 bg-blue-100 text-blue-700 rounded-lg">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
-                            </div>
-                            <h3 class="font-bold text-dark">AI База знаний</h3>
-                        </div>
-                        <p class="text-sm text-slate-500 leading-relaxed">Чат-бот для сотрудников, который мгновенно отвечает на вопросы по регламентам компании.</p>
-                    </article>
-
-                    <article class="p-8 rounded-2xl border border-slate-100 bg-surface hover:bg-white hover:shadow-lg hover:border-slate-200 transition-all duration-300">
-                        <div class="flex items-center gap-4 mb-4">
-                            <div class="p-2 bg-purple-100 text-purple-700 rounded-lg">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                            </div>
-                            <h3 class="font-bold text-dark">Computer Vision</h3>
-                        </div>
-                        <p class="text-sm text-slate-500 leading-relaxed">Распознавание дефектов по фото, подсчет людей на видео, автоматическая оценка смет.</p>
-                    </article>
-
-                    <article class="p-8 rounded-2xl border border-slate-100 bg-surface hover:bg-white hover:shadow-lg hover:border-slate-200 transition-all duration-300">
-                        <div class="flex items-center gap-4 mb-4">
-                            <div class="p-2 bg-orange-100 text-orange-700 rounded-lg">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path></svg>
-                            </div>
-                            <h3 class="font-bold text-dark">Умные отчеты</h3>
-                        </div>
-                        <p class="text-sm text-slate-500 leading-relaxed">Сбор данных из рекламы, банков и CRM в единый дашборд. Утренняя сводка в Telegram для собственника.</p>
-                    </article>
-
-                    <article class="p-8 rounded-2xl border border-slate-100 bg-surface hover:bg-white hover:shadow-lg hover:border-slate-200 transition-all duration-300">
-                        <div class="flex items-center gap-4 mb-4">
-                            <div class="p-2 bg-slate-200 text-slate-700 rounded-lg">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                            </div>
-                            <h3 class="font-bold text-dark">Личные кабинеты</h3>
-                        </div>
-                        <p class="text-sm text-slate-500 leading-relaxed">Порталы самообслуживания для клиентов. Просмотр статусов, оплат и истории заказов без звонков.</p>
-                    </article>
-
-                </div>
-            </div>
-        </section>
-
-        <section class="py-24 bg-dark text-white relative overflow-hidden">
-            <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/20 rounded-full blur-[120px] pointer-events-none"></div>
-            
-            <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
-                <h2 class="text-3xl md:text-5xl font-bold mb-6">Готовы оцифровать свой бизнес?</h2>
-                <p class="text-slate-400 text-lg mb-10 max-w-2xl mx-auto">
-                    Оставьте рутину роботам. Свяжитесь со мной, чтобы обсудить, как технологии могут сэкономить ваши деньги.
-                </p>
-                <a href="https://t.me/AleksZotov" target="_blank" class="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-blue-600 text-white font-semibold rounded-xl transition-all shadow-lg hover:shadow-primary/50">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.054 5.56-5.022c.242-.213-.054-.333-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z"/></svg>
-                    Написать в Telegram
-                </a>
-            </div>
-        </section>
-    </main>
-
-    <footer class="py-12 bg-white border-t border-slate-100">
-        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
-            <div class="text-center md:text-left">
-                <span class="text-xl font-bold text-dark tracking-tight">ZOTOV.PRO</span>
-                <p class="text-slate-400 text-sm mt-1">Системный анализ и разработка.</p>
-            </div>
-            
-            <div class="text-center md:text-right">
-                <a href="mailto:aleks@zotov.pro" class="text-dark hover:text-primary transition-colors font-medium">aleks@zotov.pro</a>
-                <p class="text-slate-400 text-sm mt-1">© 2026 Aleksandr Zotov.</p>
-            </div>
+          </div>
+          <div class="system-map" aria-hidden="true">
+            <div class="map-caption map-caption-top">Из разрозненных инструментов — в рабочую систему</div>
+            <div class="map-input input-one">сайт</div>
+            <div class="map-input input-two">CRM</div>
+            <div class="map-input input-three">заявки</div>
+            <svg viewBox="0 0 600 440" preserveAspectRatio="none" role="presentation" focusable="false">
+              <path class="route route-muted" d="M38 106H184L258 220" /><path class="route route-muted" d="M38 220H258" /><path class="route route-muted" d="M38 334H184L258 220" />
+              <path class="route route-active" d="M258 220H430H562" />
+              <circle class="route-node node-input" cx="38" cy="106" r="7" /><circle class="route-node node-input" cx="38" cy="220" r="7" /><circle class="route-node node-input" cx="38" cy="334" r="7" />
+              <circle class="route-node node-core" cx="258" cy="220" r="11" /><circle class="route-node node-end" cx="562" cy="220" r="8" />
+            </svg>
+            <div class="map-core">ваш<br />процесс</div>
+            <div class="map-output">единое<br />решение</div>
+            <div class="map-caption map-caption-bottom">данные · действия · результат</div>
+          </div>
         </div>
-    </footer>
+        <div class="shell hero-bottom"><span class="hero-rule"></span><p>Один собеседник от первого разговора до запуска и следующих версий.</p><a href="#pricing">Ориентиры стоимости <span aria-hidden="true">↓</span></a></div>
+      </section>
 
-</body>
+      <section class="section services" id="services" aria-labelledby="services-title">
+        <div class="shell section-head"><h2 id="services-title">Что я создаю</h2><p>Не отдельный экран ради экрана, а работающий инструмент под вашу задачу. Начать можно с сайта; по мере необходимости добавить процессы, интеграции и кабинет.</p></div>
+        <div class="shell service-list">
+          <article class="service-row"><h3>Сайты и каталоги</h3><p>Понятная витрина продукта или услуги с удобным управлением содержимым, заявками и следующими шагами клиента.</p><span class="service-mark" aria-hidden="true"></span></article>
+          <article class="service-row"><h3>Веб-приложения и личные кабинеты</h3><p>Порталы для клиентов и команды: роли, статусы, документы, заказы и рабочие сценарии в одном месте.</p><span class="service-mark" aria-hidden="true"></span></article>
+          <article class="service-row"><h3>Интеграции и автоматизация</h3><p>Связь сайта, CRM, баз данных, Telegram и других инструментов без постоянного ручного переноса информации.</p><span class="service-mark" aria-hidden="true"></span></article>
+          <article class="service-row"><h3>ИИ и работа с данными</h3><p>Помощники, обработка документов и изображений, отчёты и подсказки там, где они действительно упрощают работу.</p><span class="service-mark" aria-hidden="true"></span></article>
+        </div>
+      </section>
+
+      <section class="section section-dark scenarios" id="scenarios" aria-labelledby="scenarios-title">
+        <div class="shell section-head"><h2 id="scenarios-title">Какие задачи можно решить</h2><p>Это направления разработки, а не обещание готового продукта. Состав функций и ограничения определим для вашего процесса.</p></div>
+        <div class="shell scenario-grid">
+          <article><h3>Обработка заявок</h3><p>Квалификация обращений в Telegram, ответы на частые вопросы и запись на встречу в Google Календаре без ручной переписки на каждом шаге.</p></article>
+          <article><h3>Документы из данных</h3><p>Подготовка коммерческих предложений, договоров и актов в PDF из формы или CRM вместо повторного заполнения шаблонов.</p></article>
+          <article><h3>База знаний с ИИ</h3><p>Помощник для сотрудников, который ищет ответы в регламентах и документах компании с учётом прав доступа.</p></article>
+          <article><h3>Компьютерное зрение</h3><p>Анализ фото и видео: поиск дефектов, подсчёт объектов или помощь в подготовке оценки по изображениям.</p></article>
+          <article><h3>Сводные отчёты</h3><p>Данные из рекламы, банков и CRM в едином представлении; нужные показатели можно отправлять собственнику в Telegram.</p></article>
+          <article><h3>Личные кабинеты</h3><p>Самообслуживание для клиентов: статусы, оплаты, документы и история заказов доступны без лишних звонков.</p></article>
+        </div>
+      </section>
+
+      <section class="section examples" id="examples" aria-labelledby="examples-title">
+        <div class="shell section-head"><h2 id="examples-title">Как это выглядит на практике</h2><p>Два анонимизированных примера состава решений — чтобы было проще представить масштаб работы.</p></div>
+        <div class="shell examples-list">
+          <article class="work-example"><div class="example-side"><span>Каталог и продажи</span><div class="example-symbol symbol-catalog" aria-hidden="true"><i></i><i></i><i></i></div></div><div class="example-body"><h3>Каталог, который помогает работать с обращениями</h3><p>Для продажи камня: сайт с каталогом и управлением содержимым, дополненный простой CRM-логикой для заявок и работы с клиентами.</p><ul><li>Каталог товаров</li><li>Управление содержимым</li><li>Учёт обращений</li></ul></div></article>
+          <article class="work-example"><div class="example-side"><span>Оборудование и документы</span><div class="example-symbol symbol-equipment" aria-hidden="true"><i></i><i></i><i></i><i></i></div></div><div class="example-body"><h3>Документы рядом с конкретным оборудованием</h3><p>Для продавца и монтажника вентиляционных систем: сайт и каталог, регистрация единиц оборудования по QR-коду и доступ к связанной документации.</p><ul><li>Сайт и каталог</li><li>Регистрация по QR-коду</li><li>Документация по оборудованию</li></ul></div></article>
+        </div>
+        <p class="shell transparency-note">Примеры анонимизированы и описывают состав решений. Здесь нет заявления о публичном запуске, измеренных результатах, отзывах или поддержке заказчиков.</p>
+      </section>
+
+      <section class="section process" id="process" aria-labelledby="process-title">
+        <div class="shell section-head"><h2 id="process-title">От разговора до работающего решения</h2><p>Сначала выясняем, как устроена работа. Только после этого выбираем функции и технологию.</p></div>
+        <ol class="shell process-list">
+          <li><span>01</span><div><h3>Разбираю задачу</h3><p>Выясняю, кто пользуется системой, где теряются данные и какое изменение нужно бизнесу.</p></div></li>
+          <li><span>02</span><div><h3>Проектирую и разрабатываю</h3><p>Согласовываем объём, сценарии, интерфейс и интеграции. Создаю решение по этапам.</p></div></li>
+          <li><span>03</span><div><h3>Размещаю и запускаю</h3><p>Подбираем инфраструктуру, переносим решение, проверяем работу и готовим его к использованию.</p></div></li>
+          <li><span>04</span><div><h3>Поддерживаю и развиваю</h3><p>После запуска помогаю с исправлениями, обновлениями и новыми возможностями по согласованным условиям.</p></div></li>
+        </ol>
+      </section>
+
+      <section class="section deployment" id="hosting" aria-labelledby="hosting-title">
+        <div class="shell deployment-layout"><div class="deployment-copy"><h2 id="hosting-title">Решение работает там, где удобно вашему бизнесу.</h2><p>Размещение выбираем под требования к данным, доступам и сопровождению. После запуска не оставляю вас один на один с системой: можно договориться о поддержке и дальнейшем развитии.</p></div><div class="deployment-options" aria-label="Варианты размещения"><div><h3>На сервере клиента</h3><p>В вашей инфраструктуре и под вашим контролем.</p></div><div><h3>На VPS</h3><p>На отдельном виртуальном сервере под проект.</p></div><div><h3>В облаке</h3><p>На облачной платформе с подходящей конфигурацией.</p></div></div></div>
+      </section>
+
+      <section class="section pricing" id="pricing" aria-labelledby="pricing-title">
+        <div class="shell section-head"><h2 id="pricing-title">Ориентиры стоимости</h2><p>Цена зависит от функций, интеграций и состояния исходных данных. Это отправная точка для разговора, а не готовая смета.</p></div>
+        <div class="shell price-grid">
+          <article class="price-card"><p class="price-label">Первый запуск</p><p class="price-value">от 300&nbsp;000&nbsp;₽</p><h3>Сайт с рабочим процессом</h3><p>Сайт или каталог, простой учёт обращений и одна–две нужные интеграции.</p><a href="#contact">Обсудить задачу</a></article>
+          <article class="price-card price-card-featured"><p class="price-label">Основная система</p><p class="price-value">от 600&nbsp;000&nbsp;₽</p><h3>Приложение для ключевой работы</h3><p>Несколько ролей, данные и интеграции, которые заменяют ручную координацию.</p><a href="#contact">Обсудить задачу</a></article>
+          <article class="price-card"><p class="price-label">Сложный продукт</p><p class="price-value">от 1&nbsp;000&nbsp;000&nbsp;₽</p><h3>Решение с расширенной логикой</h3><p>Клиентская часть, сложные сценарии, глубокие интеграции или функции с ИИ.</p><a href="#contact">Обсудить задачу</a></article>
+        </div>
+      </section>
+
+      <section class="section about" id="about" aria-labelledby="about-title"><div class="shell about-layout"><h2 id="about-title">Небольшая студия. Прямая ответственность.</h2><div><p>Zotov Studio — независимая студия разработки. Я лично веду работу от разбора задачи до запуска, а при необходимости продолжаю поддерживать и улучшать систему.</p><p>Если проекту потребуется дополнительный специалист, обсудим это до начала соответствующего этапа.</p></div></div></section>
+
+      <section class="section faq" id="faq" aria-labelledby="faq-title"><div class="shell section-head"><h2 id="faq-title">Частые вопросы</h2><p>Коротко о формате работы и о том, как начать.</p></div><dl class="shell faq-list">
+        <div><dt>Что вы разрабатываете?</dt><dd>Сайты и каталоги, веб-приложения, личные кабинеты, внутренние системы и интеграции, которые помогают вести реальные рабочие процессы.</dd></div>
+        <div><dt>Можно ли связать решение с CRM, Telegram и ИИ?</dt><dd>Да. Состав интеграций и задач для ИИ определяем после разбора процесса и проверки технических ограничений.</dd></div>
+        <div><dt>Где будет размещён сайт или приложение?</dt><dd>Возможны серверы клиента, отдельный VPS или облачная инфраструктура. Вариант выбираем с учётом требований к данным, доступу и обслуживанию.</dd></div>
+        <div><dt>Что происходит после запуска?</dt><dd>Помогаю с эксплуатацией, исправлениями и развитием решения. Объём и условия сопровождения согласуем отдельно.</dd></div>
+        <div><dt>Как узнать стоимость проекта?</dt><dd>На странице указаны ориентиры по масштабу. Точную смету готовлю после обсуждения задачи, сценариев и интеграций.</dd></div>
+      </dl></section>
+
+      <section class="section contact section-dark" id="contact" aria-labelledby="contact-title"><div class="shell contact-layout"><div class="contact-copy"><h2 id="contact-title">Расскажите, что нужно изменить.</h2><p>Достаточно пары предложений: что сейчас не работает, какое решение требуется и с чем его нужно связать. Я отвечу и предложу следующий шаг.</p><div class="contact-links"><a class="contact-link" href="mailto:aleks@zotov.pro?subject=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0%20%D0%B4%D0%BB%D1%8F%20Zotov%20Studio">aleks@zotov.pro <span aria-hidden="true">↗</span></a><a class="contact-link" href="https://t.me/AleksZotov" target="_blank" rel="noopener noreferrer">Написать в Telegram <span aria-hidden="true">↗</span></a></div></div>
+        <form class="brief-form" data-brief-form method="post" novalidate><h3>Составить письмо с задачей</h3><p class="form-explainer">Заполните поля — откроется черновик в вашей почтовой программе. Чтобы связаться со мной, отправьте письмо там. Сайт сам ничего не отправляет.</p><div class="form-row"><label for="name">Ваше имя <span aria-hidden="true">*</span></label><input id="name" name="name" autocomplete="name" required /></div><div class="form-row"><label for="email">Электронная почта для ответа <span aria-hidden="true">*</span></label><input id="email" name="email" type="email" autocomplete="email" required /></div><div class="form-row"><label for="company">Компания или роль <span class="optional">необязательно</span></label><input id="company" name="company" autocomplete="organization" /></div><div class="form-row"><label for="message">Что нужно сделать? <span aria-hidden="true">*</span></label><textarea id="message" name="message" rows="4" required></textarea></div><p class="form-privacy">Данные остаются в браузере, пока вы не отправите письмо из своей почтовой программы. Подробнее — в <a href="./privacy.html">уведомлении об обработке данных</a>.</p><button class="button button-light" type="submit">Открыть черновик письма</button><p class="form-status" role="status" aria-live="polite" data-form-status></p></form>
+      </div></section>
+    </main>
+    <footer class="site-footer"><div class="shell footer-inner"><a class="wordmark" href="#top"><span class="wordmark-mark" aria-hidden="true"></span><span>Zotov Studio</span></a><div><a href="./privacy.html">Обработка данных</a><a href="./en/" lang="en" hreflang="en">English</a></div><p>© <span data-current-year>2026</span> Zotov Studio</p></div></footer>
+    <script src="./site-config.js"></script><script src="./script.js"></script>
+  </body>
 </html>
